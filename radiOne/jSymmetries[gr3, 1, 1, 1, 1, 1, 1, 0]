@@ -1,0 +1,8 @@
+{{j[gr3, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] :> 
+   Expand[j[gr3, n1, n2, n3, n4, n5, n6, n7]]}, 
+ {j[gr3, (n1_)?Positive, (n2_)?Positive, (n3_)?Positive, (n4_)?Positive, 
+    (n5_)?Positive, (n6_)?Positive, (n7_)?NonPositive] :> 
+   Expand[j[gr3, n2, n1, n3, n5, n4, n6, 0]/
+     (j[gr3, 0, 0, 0, 0, 0, -1, 0]/2 - j[gr3, 0, 0, 0, 0, 0, 0, -1] + 
+       (qq*j[gr3, 0, 0, 0, 0, 0, 0, 0])/2)^n7]}}
